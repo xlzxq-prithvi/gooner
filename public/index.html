@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Bot Controller</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">Guardian<span>Panel</span></div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-view="dashboard">Dashboard</a>
+                <a href="#" class="nav-item" data-view="bots">Bots</a>
+                <a href="#" class="nav-item" data-view="commands">Commands</a>
+                <a href="#" class="nav-item" data-view="movement">Movement</a>
+                <a href="#" class="nav-item" data-view="animations">Animations</a>
+                <a href="#" class="nav-item" data-view="chat">Chat</a>
+                <a href="#" class="nav-item" data-view="console">Console</a>
+                <a href="#" class="nav-item" data-view="statistics">Statistics</a>
+                <a href="#" class="nav-item" data-view="settings">Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <header class="topbar glass">
+                <div class="topbar-left">
+                    <h1 id="page-title">Dashboard</h1>
+                </div>
+                <div class="topbar-right">
+                    <div class="stat-pill"><span class="dot online"></span> Server: <span id="t-server">Online</span></div>
+                    <div class="stat-pill">Online: <span id="t-online">0</span></div>
+                    <div class="stat-pill">Mode: <span id="t-mode">B</span></div>
+                    <div class="stat-pill">IP: <span id="t-ip">eu.mineberry.net</span></div>
+                    <div class="stat-pill">CPU: <span id="t-cpu">0%</span></div>
+                    <div class="stat-pill">RAM: <span id="t-ram">0%</span></div>
+                    <div class="stat-pill">Time: <span id="t-time">00:00</span></div>
+                </div>
+            </header>
+
+            <!-- Views Container -->
+            <div class="views-container" id="view-container">
+                <!-- Views are injected here by app.js -->
+            </div>
+        </main>
+    </div>
+    
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

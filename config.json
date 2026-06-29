@@ -1,0 +1,8 @@
+{
+  "mode": "b",
+  "bot_count": 3,
+  "bot_start": 1,
+  "webhooks": [
+    "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID_1/YOUR_WEBHOOK_TOKEN_1"
+  ]
+}

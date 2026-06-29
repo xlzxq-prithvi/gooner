@@ -1,0 +1,15 @@
+{
+  "name": "guardian-dashboard",
+  "version": "1.0.0",
+  "description": "Premium Web Dashboard for Mineflayer Bot Controller",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "express": "^4.22.2",
+    "mineflayer": "^4.37.1",
+    "socket.io": "^4.8.3"
+  }
+}
