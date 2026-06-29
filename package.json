@@ -1,10 +1,30 @@
 {
   "name": "guardian-dashboard",
   "version": "1.0.0",
-  "description": "Premium Web Dashboard for Mineflayer Bot Controller",
+  "private": true,
+  "description": "Web dashboard for managing multiple Mineflayer Minecraft bots with real-time telemetry, animations, and remote control",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
+  },
+  "keywords": [
+    "minecraft",
+    "mineflayer",
+    "bot",
+    "dashboard",
+    "automation"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xlzxq-prithvi/gooner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xlzxq-prithvi/gooner/issues"
+  },
+  "homepage": "https://github.com/xlzxq-prithvi/gooner#readme",
+  "engines": {
+    "node": ">=16"
   },
   "dependencies": {
     "chart.js": "^4.5.1",
