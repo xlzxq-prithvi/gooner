@@ -15,11 +15,7 @@ const originalCreateInterface = readline.createInterface;
 readline.createInterface = function(opts) {
     const iface = originalCreateInterface.call(readline, opts);
     cliInterface = iface;
-    // Auto-start the bot controller using the mode from config.json
-    setTimeout(() => {
-        const config = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
-        if (cliInterface) cliInterface.emit('line', config.mode || 'b');
-    }, 500);
+    // Mode selection is now manual — type a/b/c in the terminal
     return iface;
 };
 
